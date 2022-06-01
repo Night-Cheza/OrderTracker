@@ -1,0 +1,26 @@
+.orderDate {
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ececec;
+    background-color: #202020;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .orderDate-time {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .orderDate-year {
+    font-size: 0.75rem;
+  }
+  
+  .orderDate-month {
+    font-size: 1.2rem;
+    font-weight: bold;   
+  }
