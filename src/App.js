@@ -1,4 +1,4 @@
-import OrderItem from "./parts/OrderItem";
+import Orders from "./parts/Orders";
 
 function App() {
   const orders = [
@@ -26,33 +26,9 @@ function App() {
 
   return (
     <div>
-      <h2>Starting react app</h2>
-      <OrderItem
-
-        item={orders[0].item}
-        price={orders[0].price}
-        orderDate={orders[0].orderDate}
-        orderTime={orders[0].orderTime}></OrderItem>
-      <OrderItem
-
-        item={orders[1].item}
-        price={orders[1].price}
-        orderDate={orders[1].orderDate}
-        orderTime={orders[0].orderTime}></OrderItem>
-      <OrderItem
-
-        item={orders[2].item}
-        price={orders[2].price}
-        orderDate={orders[2].orderDate}
-        orderTime={orders[0].orderTime}></OrderItem>
-      <OrderItem
-
-        item={orders[3].item}
-        price={orders[3].price}
-        orderDate={orders[3].orderDate}
-        orderTime={orders[0].orderTime}></OrderItem>
+      <Orders items={orders}></Orders>
     </div>
-  );
+  )
 }
 
 export default App;
