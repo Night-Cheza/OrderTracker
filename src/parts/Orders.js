@@ -1,9 +1,11 @@
 import OrderItem from "./OrderItem";
+import Card from "./Card";
 import "./Orders.css";
 
+//to render details of order: item, price and day-time
 function Orders(props) {
     return (
-        <div className="items">
+        <Card className="items">
             <OrderItem    
                 item={props.items[0].item}
                 price={props.items[0].price}
@@ -28,7 +30,7 @@ function Orders(props) {
                 orderDate={props.items[3].orderDate}
                 orderTime={props.items[3].orderTime}>
             </OrderItem>
-        </div>
+        </Card>
       );
 }
 

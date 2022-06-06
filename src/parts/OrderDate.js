@@ -1,5 +1,6 @@
 import "./OrderDate.css"
 
+//to render date of order including time
 function OrderDate (props) {
     const monthDay = props.orderDate.toLocaleString("en-US", {month: "short", day: "2-digit"});
     const year = props.orderDate.toLocaleString("en-US", {year: "numeric"});
