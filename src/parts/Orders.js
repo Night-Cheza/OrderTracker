@@ -1,9 +1,9 @@
 import OrderItem from "./OrderItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./Orders.css";
 
-//to render details of order: item, price and day-time
 function Orders(props) {
+    //to render details of order: item, price and day-time
     return (
         <Card className="items">
             <OrderItem    
