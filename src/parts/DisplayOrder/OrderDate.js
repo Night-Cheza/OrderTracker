@@ -1,4 +1,4 @@
-import "./OrderDate.css"
+import "./OrderDate.css";
 
 function OrderDate (props) {
     const monthDay = props.orderDate.toLocaleString("en-US", {month: "short", day: "2-digit"});

@@ -1,4 +1,5 @@
-import Orders from "./parts/Orders";
+import NewOrder from "./parts/AddOrder/NewOrder";
+import Orders from "./parts/DisplayOrder/Orders";
 
 function App() {
   const orders = [
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div>
+      <NewOrder></NewOrder>
       <Orders items={orders}></Orders>
     </div>
   )
