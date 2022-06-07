@@ -1,13 +1,16 @@
+import { useState } from "react";
 import OrderDate from "./OrderDate";
 import Card from "../UI/Card";
 import "./OrderItem.css"
 
 //props.attribute - the attribute from app.js file tha we defined in array of objects
-function OrderItem(props) { 
-    let item = props.item;
-
+function OrderItem(props) {   
+    //[current state value, function for updating the value], useState() is hook
+    const [item, setItem] = useState(props.item);
+    
     const clickHandler = () => {
-
+        //call function for updating the value
+        setItem("New Item");
     }
 
     //to render what items were ordered
