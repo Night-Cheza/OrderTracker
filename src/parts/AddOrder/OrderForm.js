@@ -27,7 +27,12 @@ function OrderForm () {
             price: newPrice,
             date: new Date(newDate)
         };
+
+        //to clear inputs after form is submitted
         console.log(orderData);
+        setNewTitle("");
+        setNewPrice("");
+        setNewDate("");
     };
 
     return (
@@ -35,15 +40,15 @@ function OrderForm () {
             <div className="newOrder-controls">
                 <div className="newOrder-control">
                     <label>Item</label>
-                    <input type="text" onChange={itemHandler}/>
+                    <input type="text" value={newItem} onChange={itemHandler}/>
                 </div>
                 <div className="newOrder-control">
                     <label>Price</label>
-                    <input type="number" min="0.01" step="0.01" onChange={priceHandler}/>
+                    <input type="number" value={newPrice} min="0.01" step="0.01" onChange={priceHandler}/>
                 </div>
                 <div className="newOrder-control">
                     <label>Date</label>
-                    <input type="date" min="2022-01-01" max="2025-12-31" onChange={dateHandler}/>
+                    <input type="date" value={newDate} min="2022-01-01" max="2025-12-31" onChange={dateHandler}/>
                 </div>
             </div>
             <div className="newOrder-actions">
