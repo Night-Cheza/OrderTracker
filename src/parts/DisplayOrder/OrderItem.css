@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0.5rem;
     margin: 1rem 0;
-    background-color: #525252;
+    background-color: #519142;
   }
   
   .orderItem-name {
@@ -18,7 +18,7 @@
   }
   
   .orderItem h2 {
-    color: #4b4b4b;
+    color: #519142;
     font-size: 1.5rem;
     flex: 1;
     margin: 0 1rem;
@@ -29,7 +29,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: #00135d;
+    background-color: #714586;
     border: 1px solid white;
     padding: 0.5rem;
     border-radius: 12px;
