@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./OrderForm.css";
 
-function OrderForm () {
+function OrderForm (props) {
     const [newItem, setNewTitle] = useState("");
     const [newPrice, setNewPrice] = useState("");
     const [newDate, setNewDate] = useState("");
@@ -28,8 +28,8 @@ function OrderForm () {
             date: new Date(newDate)
         };
 
+        props.onSubmitNewOrderData(orderData);
         //to clear inputs after form is submitted
-        console.log(orderData);
         setNewTitle("");
         setNewPrice("");
         setNewDate("");

@@ -1,10 +1,18 @@
 import "./NewOrder.css";
 import OrderForm from "./OrderForm";
 
-function NewOrder () {
+function NewOrder (props) {
+    const SubmitNewOrderDataHandler = (submittedOrderData) => {
+        const orderData = {
+            ...submittedOrderData,
+            id: Math.random().toString()
+        };
+        props.onAddNewOrder(orderData);
+    };
+
     return (
         <div className="newOrder">
-            <OrderForm></OrderForm>
+            <OrderForm onSubmitNewOrderData = {SubmitNewOrderDataHandler}></OrderForm>
         </div>        
     );
 }

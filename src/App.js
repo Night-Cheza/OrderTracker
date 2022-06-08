@@ -25,9 +25,14 @@ function App() {
     }
   ];
 
+  const addNewOrderHandler = (order) => {
+    console.log("in app js");
+    console.log(order);
+  }
+
   return (
     <div>
-      <NewOrder></NewOrder>
+      <NewOrder onAddNewOrder = {addNewOrderHandler}></NewOrder>
       <Orders items={orders}></Orders>
     </div>
   )
