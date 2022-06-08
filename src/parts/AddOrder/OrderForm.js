@@ -27,7 +27,7 @@ function OrderForm (props) {
             price: newPrice,
             date: new Date(newDate)
         };
-
+        //to pass new data to NewOrder.js
         props.onSubmitNewOrderData(orderData);
         //to clear inputs after form is submitted
         setNewTitle("");
