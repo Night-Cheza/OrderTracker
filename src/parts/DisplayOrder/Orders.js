@@ -22,7 +22,6 @@ function Orders(props) {
                         item={order.item}
                         price={order.price}
                         orderDate={order.orderDate}
-                        orderTime={order.orderTime}
                     />
                 ))}
             </Card>
