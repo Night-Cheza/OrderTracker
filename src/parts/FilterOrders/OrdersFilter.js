@@ -1,8 +1,6 @@
 import "./OrdersFilter.css";
 
 function OrdersFilter (props) {
-    // const [year, setYear] = useState();
-
     const yearChangeHandler = (event) => {
         props.onYearChange(event.target.value);       
     };
