@@ -37,6 +37,7 @@ function App() {
     setOrders(prevOrders => {
       return [order, ...prevOrders];
     });
+    console.log(order);
   };
 
   return (

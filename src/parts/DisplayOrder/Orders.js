@@ -11,19 +11,19 @@ function Orders(props) {
     const changeYearHandler = (year) => {
         setSelectedYear(year);
     }
-    //to render details of order: item, price and day-time
+    //to render details of order: item, price and day
     return (
         <div>
             <Card className="items">
                 <OrdersFilter selected={selectedYear} onYearChange = {changeYearHandler}></OrdersFilter>
                 {/* to render list of elements (orders) dynamically */}
-                {props.items.map((order) => (
+                {props.items.map((order) => (                    
                     <OrderItem
                         item={order.item}
                         price={order.price}
                         orderDate={order.orderDate}
                     />
-                ))}
+                ))}                
             </Card>
         </div>        
     );

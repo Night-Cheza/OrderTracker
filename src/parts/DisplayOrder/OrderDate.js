@@ -4,9 +4,8 @@ function OrderDate (props) {
     const month = props.orderDate?.toLocaleString("en-US", {month: "short"});
     const day = props.orderDate?.toLocaleString("en-US", {day: "2-digit"});
     const year = props.orderDate?.getFullYear();
-    // const time = props.orderDate.toLocaleString("en-US", {hour12: false,  hour: "2-digit", minute: "2-digit"});
 
-    //to render date of order including time
+    //to render date of order
     return (
         <div className="orderDate">
             <div className="orderDate-month">{month}</div>
