@@ -16,34 +16,18 @@ function Orders(props) {
         <div>
             <Card className="items">
                 <OrdersFilter selected={selectedYear} onYearChange = {changeYearHandler}></OrdersFilter>
-                <OrderItem    
-                    item={props.items[0].item}
-                    price={props.items[0].price}
-                    orderDate={props.items[0].orderDate}
-                    orderTime={props.items[0].orderTime}>
-                </OrderItem>
-                <OrderItem    
-                    item={props.items[1].item}
-                    price={props.items[1].price}
-                    orderDate={props.items[1].orderDate}
-                    orderTime={props.items[1].orderTime}>
-                </OrderItem>
-                <OrderItem    
-                    item={props.items[2].item}
-                    price={props.items[2].price}
-                    orderDate={props.items[2].orderDate}
-                    orderTime={props.items[2].orderTime}>
-                </OrderItem>
-                <OrderItem
-                    item={props.items[3].item}
-                    price={props.items[3].price}
-                    orderDate={props.items[3].orderDate}
-                    orderTime={props.items[3].orderTime}>
-                </OrderItem>
+                {/* to render list of elements (orders) dynamically */}
+                {props.items.map((order) => (
+                    <OrderItem
+                        item={order.item}
+                        price={order.price}
+                        orderDate={order.orderDate}
+                        orderTime={order.orderTime}
+                    />
+                ))}
             </Card>
-        </div>
-        
-      );
+        </div>        
+    );
 }
 
 export default Orders;
