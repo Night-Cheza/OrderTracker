@@ -28,7 +28,6 @@ function OrderForm (props) {
             orderDate: new Date(newDate)
         };
 
-        console.log(orderData);
         //to pass new data to NewOrder.js
         props.onSubmitNewOrderData(orderData);
         //to clear inputs after form is submitted
@@ -50,7 +49,7 @@ function OrderForm (props) {
                 </div>
                 <div className="newOrder-control">
                     <label>Date</label>
-                    <input type="date" value={newDate} min="2022-01-01" max="2025-12-31" onChange={dateHandler}/>
+                    <input type="date" value={newDate} min="2021-01-01" max="2025-12-31" onChange={dateHandler}/>
                 </div>
             </div>
             <div className="newOrder-actions">

@@ -9,8 +9,6 @@ function NewOrder (props) {
         };
         //to pass order data to App.js (child to parent) - called lifting state up
         props.onAddNewOrder(orderData);
-
-        console.log(orderData);
     };
 
     return (

@@ -4,25 +4,25 @@ import Orders from "./parts/DisplayOrder/Orders";
 
 const exampleOrder = [
   {
-    id: "01",
+    id: "i1",
     item: "Pizza",
     price: 10.99,
     orderDate: new Date(2022, 3, 15, 15, 5),
   },
   {
-    id: "02",
+    id: "i2",
     item: "Coca-Cola",
     price: 2.99,
     orderDate: new Date(2021, 5, 28, 10, 28),
   },
   {
-    id: "03",
+    id: "i3",
     item: "Coffee",
     price: 3.99,
     orderDate: new Date(2022, 2, 14, 16, 35),
   },
   {
-    id: "04",
+    id: "i4",
     item: "Extra Topping",
     price: 1.99,
     orderDate: new Date(2021, 7, 3, 12, 14),
@@ -37,7 +37,6 @@ function App() {
     setOrders(prevOrders => {
       return [order, ...prevOrders];
     });
-    console.log(order);
   };
 
   return (
