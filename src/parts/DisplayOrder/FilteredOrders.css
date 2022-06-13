@@ -1,0 +1,9 @@
+.ordersList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .noOrders {
+    text-align: center;
+    color: #5b3e67 ;
+  }
