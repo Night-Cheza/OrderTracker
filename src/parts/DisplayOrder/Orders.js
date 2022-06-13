@@ -14,7 +14,6 @@ function Orders(props) {
 
     //to filter orders according to chosen year
     const filteredOrders = props.items.filter(order => {
-        // return order.date.getFullYear().toString() === selectedYear;    
         return order.orderDate.getFullYear().toString() === selectedYear;
     });
 
@@ -24,7 +23,7 @@ function Orders(props) {
             <Card className="items">
                 <OrdersFilter selected={selectedYear} onYearChange = {changeYearHandler}></OrdersFilter>
                 {/* to render list of elements (orders) dynamically */}
-                {filteredOrders.map((order) => (                    
+                {filteredOrders.length ===0 ? <p><strong>No orders found</strong></p> : filteredOrders.map((order) => (                    
                     <OrderItem
                         //to help identify unique values in a list of items
                         key={order.id}
@@ -33,7 +32,7 @@ function Orders(props) {
                         price={order.price}
                         orderDate={order.orderDate}
                     />
-                ))}                
+                ))}                    
             </Card>
         </div>        
     );
