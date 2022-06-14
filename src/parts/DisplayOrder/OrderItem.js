@@ -7,14 +7,16 @@ function OrderItem(props) {
 
     //to render what items were ordered
     return (
-        <Card className="orderItem">
-            {/* if no content between opening and closing tag, it could be written as <OrderDate />*/}
-            <OrderDate orderDate={props.orderDate}></OrderDate> 
-            <div className="orderItem-name">
-                <h2>{props.item}</h2>
-                <div className="orderItem-price">${props.price}</div>
-            </div>
-        </Card>
+        <li>
+            <Card className="orderItem">
+                {/* if no content between opening and closing tag, it could be written as <OrderDate /> */}
+                <OrderDate orderDate={props.orderDate}></OrderDate> 
+                <div className="orderItem-name">
+                    <h2>{props.item}</h2>
+                    <div className="orderItem-price">${props.price}</div>
+                </div>
+            </Card>
+        </li>
     );
 }
 

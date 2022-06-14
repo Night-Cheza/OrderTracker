@@ -53,7 +53,8 @@ function OrderForm (props) {
                 </div>
             </div>
             <div className="newOrder-actions">
-                <button type="submit">Add Item</button>
+                <button type="button" onClick={props.onCancel}>Cancel</button>
+                <button type="submit">Add Order</button>
             </div>
         </form>
     );

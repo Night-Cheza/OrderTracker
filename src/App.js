@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NewOrder from "./parts/AddOrder/NewOrder";
+import NewOrder from "./parts/NewOrder/NewOrder";
 import Orders from "./parts/DisplayOrder/Orders";
 
 const exampleOrder = [
