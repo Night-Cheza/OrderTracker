@@ -9,7 +9,7 @@ function Chart(props) {
                 //label is unique for each bar, we can use it as a value for key
                 <ChartBars key={dataPoint.label} value={dataPoint.value} maxValue={null} label={dataPoint.label}/>)}
         </div>
-    )
+    );
 }
 
 export default Chart;
