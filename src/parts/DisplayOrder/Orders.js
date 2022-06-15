@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FilteredOrders from "./FilteredOrders";
 import OrdersFilter from "../FilterOrders/OrdersFilter";
+import OrdersChart from "./OrdersChart";
 import Card from "../UI/Card";
 import "./Orders.css";
 
@@ -21,7 +22,8 @@ function Orders(props) {
     return (
         <div>
             <Card className="items">
-                <OrdersFilter selected={selectedYear} onYearChange = {changeYearHandler}></OrdersFilter>
+                <OrdersFilter selected={selectedYear} onYearChange = {changeYearHandler} />
+                <OrdersChart orders={filteredOrders}/>
                 <FilteredOrders items={filteredOrders} />
             </Card>
         </div>        

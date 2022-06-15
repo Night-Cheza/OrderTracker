@@ -1,5 +1,5 @@
 .newOrder {
-    background-color: #eabb74;
+    background-color: #eabb74aa;
     padding: 1rem;
     margin: 2rem auto;
     width: 50rem;
@@ -34,5 +34,5 @@
   
   .newOrder button.alternative:hover,
   .newOrder button.alternative:active {
-    background-color: #eabb74;
+    background-color: #eabb74aa;
   }
